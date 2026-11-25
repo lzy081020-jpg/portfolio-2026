@@ -1,34 +1,38 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="赖征宇，西南交通大学人工智能专业本科生。大学生家教，主教数学，也可辅导物理和英语。">
   <title>赖征宇｜大学生家教 · 主教数学</title>
-  <link rel="stylesheet" href="tutor.css">
+  <meta name="theme-color" content="#050807">
+  <link rel="stylesheet" href="style.css?v=20261125">
+  <link rel="stylesheet" href="tutor.css?v=20261125b">
 </head>
 <body>
-  <header class="wrap topbar">
-    <a href="index.html">赖征宇 · 个人作品集</a>
-    <a href="#contact">家教咨询</a>
-  </header>
-  <main class="wrap">
+<div class="page-transition"></div><div class="cursor-dot"></div><div class="cursor-ring"></div><div class="site-toast" id="siteToast" role="status" aria-live="polite"></div>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html" data-transition=""><span class="mark">LZY.</span> PORTFOLIO</a>
+  <div class="nav-links"><a href="index.html" data-transition="">首页</a><a href="ai.html" data-transition="">AI / 编程</a><a href="ai.html#rst" data-transition="">RST 竞赛</a><a href="creation.html" data-transition="">创作</a><a href="hometown.html" data-transition="">家乡 / 成长</a><a href="about.html" data-transition="">关于我</a><a class="active" aria-current="page" href="tutor.html" data-transition="">家教辅导</a></div>
+  <div class="nav-actions"><button class="icon-btn" id="themeBtn" aria-label="切换主题">◐</button><button class="icon-btn menu-btn" aria-label="菜单">☰</button></div>
+</div></nav>
+  <main class="container tutor-page">
     <section class="intro" aria-labelledby="name">
       <div>
-        <p class="eyebrow">西南交通大学 · 人工智能专业 · 2026 级本科生</p>
-        <h1 id="name">赖征宇<span>大学生家教</span></h1>
-        <p class="lead">主教数学，也可辅导物理和英语。讲题时，我会和学生一起弄清卡在哪一步，再用一道变式题检验能否独立解决。</p>
-        <a class="action" href="#contact">咨询家教</a>
+        <p class="tutor-school">西南交通大学 · 人工智能专业 · 2026 级本科生</p>
+        <h1 class="about-name" id="name">赖征宇<span>大学生家教</span></h1>
+        <p class="hero-lead">主教数学，也可辅导物理和英语。讲题时，我会和学生一起弄清卡在哪一步，再用一道变式题检验能否独立解决。</p>
+        <a class="btn primary" href="#contact">咨询家教</a>
       </div>
-      <img class="portrait" src="assets/portrait-clean.png" alt="赖征宇">
+      <div class="about-photo"><img src="assets/portrait-clean.png" alt="赖征宇"></div>
     </section>
 
     <section class="section" aria-labelledby="subjects">
       <h2 id="subjects">辅导科目</h2>
       <div class="subjects">
-        <article class="math"><h3>数学 <small>主教</small></h3><p>梳理概念和常用题型，带学生圈出条件、找出数量关系、写清关键步骤。用错题和变式练习检验同类题能否独立完成。</p></article>
-        <article><h3>物理</h3><p>从题目情境出发画示意图，理清过程和物理量，再列式并检查单位。</p></article>
-        <article><h3>英语</h3><p>结合课内内容复习词汇和基础语法，练习拆分长句与定位阅读题依据。</p></article>
+        <article class="card card-pad math"><h3>数学 <small>主教</small></h3><p>梳理概念和常用题型，带学生圈出条件、找出数量关系、写清关键步骤。用错题和变式练习检验同类题能否独立完成。</p></article>
+        <article class="card card-pad"><h3>物理</h3><p>从题目情境出发画示意图，理清过程和物理量，再列式并检查单位。</p></article>
+        <article class="card card-pad"><h3>英语</h3><p>结合课内内容复习词汇和基础语法，练习拆分长句与定位阅读题依据。</p></article>
       </div>
     </section>
 
@@ -44,12 +48,12 @@
     <section class="section" aria-labelledby="background">
       <h2 id="background">AI 学习与机器人竞赛</h2>
       <div class="background">
-        <article>
+        <article class="card card-pad">
           <h3>AI 学习与认证</h3>
           <p>学习过提示词设计、智能体和大模型应用，获得科大讯飞 AI 大学堂和阿里云 Apsara Clouder 等学习认证。备课时可用 AI 辅助生成变式题或整理错题，并逐题核对条件、步骤和答案。</p>
           <a href="ai.html#certificates">查看 AI 学习认证 →</a>
         </article>
-        <article>
+        <article class="card card-pad">
           <h3>机器人竞赛</h3>
           <ul>
             <li>第十九届先进机器人及仿真技术大赛 · 水中机器鱼仿真障碍竞速 · 国赛二等奖</li>
@@ -66,9 +70,10 @@
       <h2 id="contact-heading">家教咨询</h2>
       <p>首次联系可告知学生年级、希望辅导的科目、近期遇到的困难和方便的时间。辅导范围、地点和上课方式可进一步沟通。</p>
       <p>微信 <strong>laizhengyu081020</strong></p>
-      <a class="action" href="mailto:338922331@qq.com?subject=%E5%AE%B6%E6%95%99%E5%92%A8%E8%AF%A2">发邮件咨询</a>
+      <a class="btn primary" href="mailto:338922331@qq.com?subject=%E5%AE%B6%E6%95%99%E5%92%A8%E8%AF%A2">发邮件咨询</a>
     </section>
   </main>
-  <footer class="wrap footer"><a href="index.html">返回个人作品集</a></footer>
+<footer class="footer"><div class="container footer-inner"><div><b>赖征宇 · 个人作品集</b><br><span class="motto">于曲折处跋涉，于荒芜见繁花。</span></div><div>2026 · 赖征宇</div></div></footer>
+<script src="app.js?v=20261008d"></script>
 </body>
 </html>
