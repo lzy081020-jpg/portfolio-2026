@@ -745,4 +745,8 @@ body.cursor-ready .cursor-dot,body.cursor-ready .cursor-ring{opacity:1}
 .home-credential img { display: block; width: 100%; height: 185px; padding: 12px; object-fit: contain; background: rgba(110, 135, 124, .12); }
 @media (max-width: 720px) {
   .home-tutoring-grid { grid-template-columns: 1fr; }
+  .home-ai-certificates { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .home-ai-certificates img { height: clamp(64px, 22vw, 135px); padding: 3px; }
+  .home-ai-certificates .card-pad { padding: 7px; font-size: .75rem; line-height: 1.4; overflow-wrap: anywhere; }
+  .home-ai-certificates .card-pad p { margin: .3rem 0 0; }
 }
