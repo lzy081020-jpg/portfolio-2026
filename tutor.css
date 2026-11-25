@@ -1,0 +1,53 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, "Microsoft YaHei", sans-serif;
+  background: #f6f7f1;
+  color: #172720;
+  line-height: 1.72;
+  --muted: #45574c;
+  --accent: #215342;
+  --border: #d4dfd4;
+}
+
+* { box-sizing: border-box; }
+body, h1, h2, h3, p { margin: 0; }
+a { color: var(--accent); text-underline-offset: .22em; }
+a:focus-visible { outline: 3px solid #a96224; outline-offset: 4px; }
+.wrap { width: min(100% - 2rem, 980px); margin-inline: auto; }
+.topbar { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1rem; border-bottom: 1px solid var(--border); }
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) 215px; align-items: center; gap: 2rem; padding-block: clamp(2.5rem, 8vw, 5rem); }
+.eyebrow { color: var(--accent); font-weight: 650; }
+h1 { margin-block: .35rem .8rem; font-size: clamp(2.8rem, 8vw, 5.5rem); line-height: 1.08; }
+h1 span { display: block; margin-top: .5rem; font-size: clamp(1.45rem, 4vw, 2.55rem); }
+.lead { max-width: 40em; color: var(--muted); }
+.portrait { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 35%; border-radius: 50%; background: #d9e7dc; }
+.action { display: inline-block; margin-top: 1rem; padding: .55rem 1rem; border-radius: .5rem; background: var(--accent); color: white; text-decoration: none; }
+.section { padding-block: 2rem; border-top: 1px solid var(--border); }
+h2 { margin-bottom: 1rem; font-size: clamp(1.45rem, 4vw, 2rem); }
+h3 { margin-bottom: .35rem; }
+.subjects, .background, .steps { display: grid; gap: .85rem; }
+.subjects { grid-template-columns: 1.3fr 1fr 1fr; }
+.background { grid-template-columns: 1fr 1fr; }
+.subjects article, .background article { padding: 1.2rem; background: white; border: 1px solid var(--border); border-radius: .7rem; }
+.subjects .math { background: #e0eee4; }
+.math small { margin-left: .25rem; font-size: .8rem; color: var(--accent); }
+.steps { grid-template-columns: repeat(3, 1fr); padding-left: 1.45rem; column-gap: 2.2rem; }
+.steps li::marker { color: var(--accent); font-weight: 700; }
+.background ul { padding-left: 1.25rem; margin-top: .35rem; }
+.background a { display: inline-block; margin-top: .65rem; }
+.contact p + p { margin-top: .6rem; }
+.footer { padding-block: 1rem 2rem; border-top: 1px solid var(--border); }
+
+@media (max-width: 640px) {
+  .intro { grid-template-columns: minmax(0, 1fr) 76px; gap: .75rem; align-items: start; }
+  .portrait { margin-top: .25rem; }
+  .subjects, .background, .steps { grid-template-columns: 1fr; }
+}
+
+@media print {
+  :root { background: white; }
+  .topbar, .footer, .action { display: none; }
+  .wrap { width: 100%; }
+  .intro, .section { padding-block: 1rem; }
+  article, li { break-inside: avoid; }
+}

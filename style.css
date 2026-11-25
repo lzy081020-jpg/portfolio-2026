@@ -715,4 +715,14 @@ body.cursor-ready .cursor-dot,body.cursor-ready .cursor-ring{opacity:1}
  @media(max-width:820px){.featured-grid,.experience-grid{grid-template-columns:1fr}.featured-card{display:grid;grid-template-columns:1fr 1fr}.featured-card>img{height:100%;min-height:220px}}
  @media(max-width:540px){.featured-card{display:flex}.featured-card>img{height:220px;min-height:0}.hero-actions{grid-template-columns:1fr 1fr}}
  @media print{.featured-grid,.experience-grid{grid-template-columns:repeat(3,1fr)}.featured-card{display:flex;break-inside:avoid}.featured-card>img{height:140px}.featured-card>div{padding:12px}.featured-card h3,.experience-grid h3{font-size:14px}.featured-card p,.experience-grid p{font-size:11px}}
- 
+
+.robotics-awards { scroll-margin-top: 72px; }
+.robotics-award-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.robotics-award > a { display: block; padding: 12px; background: rgba(110, 135, 124, .12); }
+.robotics-award img { display: block; width: 100%; height: clamp(200px, 24vw, 300px); object-fit: contain; }
+.robotics-award h3 { margin: 0 0 .5rem; }
+.robotics-award p { margin: .3rem 0; }
+.robotics-award time { display: inline-block; margin-top: .5rem; font-size: .85rem; opacity: .82; }
+@media (max-width: 720px) {
+  .robotics-award-grid { grid-template-columns: 1fr; }
+}
