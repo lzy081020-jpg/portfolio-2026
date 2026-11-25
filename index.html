@@ -5,13 +5,13 @@
 <meta name="theme-color" content="#050807">
 <meta name="description" content="赖征宇｜人工智能专业学生｜数学家教、AI学习认证、机器人竞赛与个人作品集">
 <title>赖征宇｜AI Portfolio</title>
-<link rel="stylesheet" href="style.css?v=20261008d">
+<link rel="stylesheet" href="style.css?v=20261125c">
 </head>
 <body>
 <div class="page-transition"></div><div class="cursor-dot"></div><div class="cursor-ring"></div>
 <nav class="nav"><div class="nav-inner">
   <a class="brand" href="index.html" data-transition=""><span class="mark">LZY.</span> PORTFOLIO</a>
-  <div class="nav-links"><a class="active" href="index.html" data-transition="">首页</a><a href="ai.html" data-transition="">AI / 编程</a><a href="ai.html#rst" data-transition="">RST 竞赛</a><a href="creation.html" data-transition="">创作</a><a href="about.html" data-transition="">关于我</a><a href="tutor.html" data-transition="">家教辅导</a></div>
+  <div class="nav-links"><a class="active" href="index.html" data-transition="">首页</a><a href="ai.html" data-transition="">AI / 编程</a><a href="ai.html#rst" data-transition="">RST 竞赛</a><a href="creation.html" data-transition="">创作</a><a href="about.html" data-transition="">关于我</a><a href="#home-tutoring">家教辅导</a></div>
   <div class="nav-actions"><button class="icon-btn" id="themeBtn" aria-label="切换主题">◐</button><button class="icon-btn menu-btn" aria-label="菜单">☰</button></div>
 </div></nav>
 
@@ -28,11 +28,17 @@
       <div class="type-line"><span class="prefix">身份 //</span><span id="typed"></span><span class="caret"></span></div>
       
       <p class="hero-lead">西南交通大学 · 人工智能专业 · 2026级本科生</p>
+      <p class="hero-copy home-tutoring-lead"><strong>大学生家教</strong> · 主教数学，也辅导物理和英语</p>
+      <dl class="home-tutoring-scores" aria-label="高考成绩">
+        <div><dt>高考数学</dt><dd>130<small> 分</small></dd></div>
+        <div><dt>高考英语</dt><dd>137<small> 分</small></dd></div>
+        <div><dt>高考总分</dt><dd>630+</dd></div>
+      </dl>
       <div class="info-reveal compact">
         <button class="reveal-toggle" type="button" aria-expanded="false">我的想法 <span>＋</span></button>
         <div class="reveal-panel"><p class="hero-copy">西南交通大学人工智能专业学生。这里记录我的项目、创作和学习经历。</p></div>
       </div>
-      <div class="hero-actions"><a class="btn primary" href="#featured">看我的作品 ↓</a><a class="btn" href="about.html#contact" data-transition="">联系我 ↗</a><a class="btn" href="tutor.html" data-transition="">家教辅导 ↗</a></div>
+      <div class="hero-actions"><a class="btn primary" href="#home-tutoring">了解家教辅导 ↓</a><a class="btn" href="#featured">看我的作品 ↓</a><a class="btn" href="tutor.html#contact" data-transition="">家教咨询 ↗</a></div>
     </div>
     <div class="hero-visual">
       <div class="ring-halo" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -42,7 +48,46 @@
       
     </div>
   </div>
-</section><section class="section featured-section" id="featured"><div class="container"><div class="section-head reveal"><div><h2>最近做的三件事。</h2></div></div><div class="featured-grid">
+</section><section class="section home-tutoring" id="home-tutoring" aria-labelledby="home-tutoring-title">
+  <div class="container">
+    <div class="section-head"><div><h2 id="home-tutoring-title">家教怎么上</h2></div><p>主教数学，也辅导物理和英语。根据学生当前的掌握情况安排基础巩固或拔高。</p></div>
+    <div class="home-tutoring-grid">
+      <article class="card card-pad">
+        <h3>基础逐步讲，卡点耐心解释</h3>
+        <p>从一道近期错题入手，找出是概念、审题还是推导卡住。每一步讲清依据，必要时换例子或画图，再请学生自己讲一遍、独立做一道变式题。</p>
+      </article>
+      <article class="card card-pad">
+        <h3>数学、物理按掌握程度拔高</h3>
+        <p>数学可对比函数题的图像法和代数法。物理可比较受力与运动分析和能量法，讲清各自适用的条件，以及遇到新题如何选方法。</p>
+      </article>
+      <article class="card card-pad">
+        <h3>按需讲学习方法或 AI</h3>
+        <p>可结合学生的实际问题讲主动回忆、错题复盘和间隔复习。对 AI 感兴趣，也可以单独讲大模型知识框架，并安排模型实操。</p>
+      </article>
+    </div>
+
+    <div class="section-head home-tutoring-proof"><div><h2>学习认证与竞赛证书</h2></div></div>
+    <div class="home-tutoring-grid">
+      <a class="card home-credential" href="ai.html#certificates" data-transition="">
+        <img src="cert-iflytek-academy.png" alt="科大讯飞 AI 大学堂提示词工程师认证" loading="lazy">
+        <div class="card-pad"><h3>科大讯飞 AI 大学堂</h3><p>提示词工程师认证</p><span>查看 AI 学习认证 →</span></div>
+      </a>
+      <a class="card home-credential" href="ai.html#certificates" data-transition="">
+        <img src="cert-alicloud-agent.jpeg" alt="阿里云 Apsara Clouder 智能体应用学习认证" loading="lazy">
+        <div class="card-pad"><h3>阿里云 Apsara Clouder</h3><p>基于百炼平台构建智能体应用</p><span>查看 AI 学习认证 →</span></div>
+      </a>
+      <a class="card home-credential" href="ai.html#robotics-awards" data-transition="">
+        <img src="assets/robotics-awards/rst-national.jpg" alt="RST 水中机器鱼仿真障碍竞速国赛二等奖证书" loading="lazy">
+        <div class="card-pad"><h3>机器人竞赛</h3><p>RST 国赛二等奖、四川赛区一等奖，iCAN 应急救援机器人挑战赛复赛三等奖。</p><span>查看三张竞赛证书 →</span></div>
+      </a>
+    </div>
+    <div class="hero-actions">
+      <a class="btn primary" href="tutor.html#contact" data-transition="">家教咨询 ↗</a>
+      <a class="btn" href="tutor.html" data-transition="">查看各科辅导详情 ↗</a>
+    </div>
+  </div>
+</section>
+<section class="section featured-section" id="featured"><div class="container"><div class="section-head reveal"><div><h2>最近做的三件事。</h2></div></div><div class="featured-grid">
   <a class="card featured-card reveal" href="ai.html#robotics-awards" data-transition=""><img src="assets/rst-result-focus.png" alt="机器鱼仿真成绩 14.63 秒"><div><h3>第一次 RST 仿真机器鱼竞赛</h3><p>千行代码、资料研究与多轮测试。该赛项获国赛二等奖、四川赛区一等奖。</p><span>查看参赛与获奖记录 →</span></div></a>
   <a class="card featured-card reveal" href="ai.html#games" data-transition=""><img src="assets/tank-game.png" alt="坦克大战游戏画面"><div><h3>两款可以试玩的小游戏</h3><p>飞机大战与坦克大战，使用 HTML、JavaScript 和 Canvas。</p><span>打开游戏作品 →</span></div></a>
   <a class="card featured-card reveal" href="creation.html#works" data-transition=""><img src="assets/music-poster-3.jpg" alt="英文歌曲歌词视频画面"><div><h3>音乐与视频创作</h3><p>三支 AI 音乐相关作品，记录不同形式的创作尝试。</p><span>观看作品 →</span></div></a></div></div></section>
