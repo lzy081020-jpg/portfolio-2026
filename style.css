@@ -735,11 +735,14 @@ body.cursor-ready .cursor-dot,body.cursor-ready .cursor-ring{opacity:1}
 .home-tutoring-scores small { font-size: .72rem; }
 .home-tutoring { scroll-margin-top: 72px; }
 .home-tutoring-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.home-tutoring-grid h3 { margin: 0 0 .65rem; }
-.home-tutoring-proof { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.home-tutoring-features { display: grid; gap: clamp(1.5rem, 4vw, 2.5rem); padding-left: 1.5rem; }
+.home-tutoring-features > li { padding: 0 0 1rem .3rem; border-bottom: 1px solid var(--line); }
+.home-tutoring-features > li::marker { font-weight: 750; }
+.home-tutoring-features h3 { margin: 0 0 .55rem; }
+.home-tutoring-features .home-tutoring-grid { margin-block: 1rem; }
+#works { scroll-margin-top: 72px; }
 .home-credential { display: block; overflow: hidden; }
 .home-credential img { display: block; width: 100%; height: 185px; padding: 12px; object-fit: contain; background: rgba(110, 135, 124, .12); }
-.home-credential span { display: block; margin-top: .75rem; text-decoration: underline; text-underline-offset: .2em; }
 @media (max-width: 720px) {
   .home-tutoring-grid { grid-template-columns: 1fr; }
 }
